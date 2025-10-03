@@ -658,6 +658,10 @@ body::after {
     z-index: 1;
 }
 
+.option-label sup {
+    font-size: 0.6em;
+}
+
 .note {
     font-size: 11px;
     color: var(--text-secondary);
