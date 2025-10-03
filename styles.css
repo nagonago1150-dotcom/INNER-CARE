@@ -934,7 +934,7 @@ body::after {
     #section2 .question-title {
         white-space: normal;
         transform: scale(1);
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .question-area {
