@@ -662,6 +662,10 @@ body::after {
     font-size: 0.4em;
 }
 
+.main-copy sup {
+    font-size: 0.4em;
+}
+
 .note {
     font-size: 11px;
     color: var(--text-secondary);
@@ -670,6 +674,10 @@ body::after {
     margin-top: 16px;
     font-weight: 300;
     letter-spacing: 0.02em;
+}
+
+.main-copy-note {
+    margin-top: 20px;
 }
 
 /* ローディング画面 */
