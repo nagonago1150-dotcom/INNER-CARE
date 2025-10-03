@@ -893,7 +893,16 @@ body::after {
     }
 }
 
+/* モバイル専用改行 */
+.br-mobile {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    .br-mobile {
+        display: inline;
+    }
+
     .section {
         padding: 30px 0 50px 0;
     }
