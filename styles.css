@@ -962,9 +962,9 @@ body::after {
     }
 
     #section2 .question-title {
-        white-space: normal;
-        transform: scale(1);
-        font-size: 15px;
+        white-space: nowrap;
+        transform: scale(0.95);
+        letter-spacing: 0.04em;
     }
 
     .question-area {
@@ -1014,8 +1014,8 @@ body::after {
     }
     
     #section2 .question-title {
-        white-space: normal;
-        transform: scale(1);
+        white-space: nowrap;
+        transform: scale(0.93);
     }
     
     .question-area {
