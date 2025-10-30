@@ -1,6 +1,29 @@
 let currentQuestion = 1;
 const answers = {};
-const redirectUrl = 'https://bulk.co.jp/lp?u=BUL_test_PT_E1_001';
+
+// 動的リダイレクト機能
+// URLパスに応じて、適切な販売リンクを返す
+function getRedirectUrl() {
+    const currentPath = window.location.pathname;
+
+    // デバッグログ（開発者ツールで確認可能）
+    console.log('[INNER CARE] 現在のパス:', currentPath);
+
+    // パスと販売リンクのマッピング
+    const urlMapping = {
+        '/1': 'https://sf-system.jp/link.php?i=pi6e55wt4f78&m=mi41ruivpeep'
+    };
+
+    // 該当するパスのURLを返す。該当しない場合はデフォルト
+    const redirectUrl = urlMapping[currentPath] || 'https://bulk.co.jp/lp?u=BUL_test_PT_E1_001';
+
+    console.log('[INNER CARE] リダイレクト先URL:', redirectUrl);
+
+    return redirectUrl;
+}
+
+// 後方互換性のため、変数としても定義
+const redirectUrl = getRedirectUrl();
 
 // カスタムカーソルの初期化
 function initCursor() {
@@ -253,13 +276,20 @@ function updateCursorEvents() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // 商品画像リンクを動的に設定
+    const productLink = document.getElementById('dynamic-product-link');
+    if (productLink) {
+        productLink.href = getRedirectUrl();
+        console.log('[INNER CARE] 商品リンクを設定:', productLink.href);
+    }
+
     // カスタムカーソルの初期化
     if (window.matchMedia('(pointer: fine)').matches) {
         initCursor();
     } else {
         document.body.style.cursor = 'auto';
     }
-    
+
     // 最初の質問番号を追加
     const firstSection = document.querySelector('.section.active');
     addQuestionNumber(firstSection, 1);
