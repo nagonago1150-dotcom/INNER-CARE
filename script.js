@@ -22,9 +22,6 @@ function getRedirectUrl() {
     return redirectUrl;
 }
 
-// 後方互換性のため、変数としても定義
-const redirectUrl = getRedirectUrl();
-
 // カスタムカーソルの初期化
 function initCursor() {
     const cursor = document.createElement('div');
@@ -263,7 +260,10 @@ function showLoading() {
             setTimeout(() => {
                 fadeOverlay.style.opacity = '1';
                 setTimeout(() => {
-                    window.location.href = redirectUrl;
+                    // 動的リダイレクト実行（URLパスに応じた販売リンクへ遷移）
+                    const finalRedirectUrl = getRedirectUrl();
+                    console.log('[INNER CARE] 最終リダイレクト実行:', finalRedirectUrl);
+                    window.location.href = finalRedirectUrl;
                 }, 1000);
             }, 100);
         }, 3000);
