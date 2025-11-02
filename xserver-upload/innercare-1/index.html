@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PROTEIN SLEEP TECH | その不調、夜の習慣が原因かも？</title>
+    <link rel="stylesheet" href="../innercare-common/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Serif+JP:wght@200;300;400;500&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1067499045293329');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1067499045293329&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <!-- PR Label -->
+    <div class="pr-label">
+        <span class="pr-text">PR: バルクオム(株)</span>
+    </div>
+
+    <div id="app">
+        <section id="section1" class="section active">
+            <div class="container">
+                <div class="main-visual">
+                    <a href="#" class="product-link" id="dynamic-product-link" target="_blank" rel="noopener noreferrer">
+                        <img src="../innercare-common/public/LinkU.PNG" alt="LINK+U トライアルセット" class="product-image">
+                    </a>
+                </div>
+                <div class="main-copy-container">
+                    <h1 class="main-copy">
+                        <span class="copy-line1">睡眠の質<sup>※</sup>を高め、<br>日中のパフォーマンス<br class="br-mobile">をサポートする。</span>
+                        <span class="copy-line2">夜のプロテイン習慣。</span>
+                    </h1>
+                    <div class="copy-decoration">
+                        <span class="deco-line"></span>
+                        <span class="deco-dot"></span>
+                        <span class="deco-line"></span>
+                    </div>
+                    <p class="note main-copy-note">※眠りの深さ</p>
+                </div>
+                <div class="question-area">
+                    <h2 class="question-title">Q1. あなたが今、一番気になっている<br class="br-mobile">コンディションの変化は？</h2>
+                    <div class="options">
+                        <button class="option-button" data-answer="A" onclick="selectAnswer(1, 'A')">
+                            <span class="option-label">夜中に目が覚めるなど、<br class="br-mobile">眠りが浅い</span>
+                        </button>
+                        <button class="option-button" data-answer="B" onclick="selectAnswer(1, 'B')">
+                            <span class="option-label">日中のストレス<sup>※</sup>や、<br class="br-mobile">抜けきらない疲労感</span>
+                        </button>
+                        <button class="option-button" data-answer="C" onclick="selectAnswer(1, 'C')">
+                            <span class="option-label">朝、すっきりと起きられない</span>
+                        </button>
+                    </div>
+                    <p class="note">※事務作業やデスクワークによる一時的なもの</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="section">
+            <div class="container">
+                <div class="progress-bar">
+                    <span class="progress-text">Q2 / 全3問</span>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 66.67%;"></div>
+                    </div>
+                </div>
+                <div class="question-area">
+                    <h2 class="question-title">Q2. 日々のコンディションケアで、<br class="br-mobile">最も重視することは？</h2>
+                    <div class="options">
+                        <button class="option-button" data-answer="A" onclick="selectAnswer(2, 'A')">
+                            <span class="option-label">科学的な根拠に基づいた<br class="br-mobile">実感力</span>
+                        </button>
+                        <button class="option-button" data-answer="B" onclick="selectAnswer(2, 'B')">
+                            <span class="option-label">毎日、安心して<br class="br-mobile">口にできる安全性</span>
+                        </button>
+                        <button class="option-button" data-answer="C" onclick="selectAnswer(2, 'C')">
+                            <span class="option-label">付け焼き刃ではない、<br class="br-mobile">根本的なアプローチ</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" class="section">
+            <div class="container">
+                <div class="progress-bar">
+                    <span class="progress-text">Q3 / 全3問</span>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="question-area">
+                    <h2 class="question-title">Q3. あなたが手に入れたい、<br class="br-mobile">理想の状態は？</h2>
+                    <div class="options">
+                        <button class="option-button" data-answer="A" onclick="selectAnswer(3, 'A')">
+                            <span class="option-label">朝まで深く、<br class="br-mobile">質の高い眠り<sup>※</sup></span>
+                        </button>
+                        <button class="option-button" data-answer="B" onclick="selectAnswer(3, 'B')">
+                            <span class="option-label">気持ちよく一日を<br class="br-mobile">スタートできる、爽快な朝</span>
+                        </button>
+                        <button class="option-button" data-answer="C" onclick="selectAnswer(3, 'C')">
+                            <span class="option-label">穏やかで、余裕のある毎日</span>
+                        </button>
+                    </div>
+                    <p class="note">※眠りの深さ</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="loading-section" class="section">
+            <div class="container">
+                <div class="loading-content">
+                    <p class="thank-you">ありがとうございます。</p>
+                    <p class="leading-text">では、そんなあなたへ...</p>
+                    <div class="loading-animation">
+                        <div class="ripple-container">
+                            <div class="ripple"></div>
+                            <div class="ripple"></div>
+                            <div class="ripple"></div>
+                        </div>
+                    </div>
+                    <p class="loading-text">最適なご提案を準備しています...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
